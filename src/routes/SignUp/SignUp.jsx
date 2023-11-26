@@ -30,7 +30,7 @@ export default function SignUp() {
       const isNewUser = users.some((user) => user.email === email);
       console.log(isNewUser);
       if (!isNewUser) {
-        await addUser(user);
+         addUser(user);
         navigate(`/login`);
       } else {
         setErrors({ user: { _errors: ["not new user"] } });

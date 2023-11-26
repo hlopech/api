@@ -20,6 +20,7 @@ function AddNote() {
   }, []);
   const handleAddNote = async () => {
     try {
+
       const note = Note.parse({
         userId: user.id,
         id: crypto.randomUUID(),
@@ -28,8 +29,13 @@ function AddNote() {
         noteText,
       });
 
-      await addNote(note);
-
+      await fetch("http://localhost:5002/notes", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(note),
+      });
       setErrors(null);
       navigate(`/notes/${user.id}`);
     } catch (err) {
