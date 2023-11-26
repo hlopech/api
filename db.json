@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "10119831nN",
+      "date": 1701007981294,
+      "id": "3e6f8057-35c0-4b98-902b-1878e67f5e90"
+    }
+  ],
+  "notes": [
+    {
+      "userId": "3e6f8057-35c0-4b98-902b-1878e67f5e90",
+      "id": "3ed9d993-4ba4-40fb-bb61-b989d3cdedd2",
+      "date": 1701028019580,
+      "noteName": "111113",
+      "noteText": "12222222"
+    }
+  ]
+}
